@@ -6,7 +6,9 @@ use Digest::SHA1  qw(sha1_hex);
 use strict;
 use warnings;
 
-my %tier1 = (
+my %frameworks = (
+
+    ### Tier 1
     'kguiaddons' => '',
     'kcodecs' => '',
     'kdbusaddons' => '',
@@ -24,7 +26,40 @@ my %tier1 = (
     'kwindowsystem' => '',
     'kplotting' => '',
     'threadweaver' => '',
-    'kitemmodels' => ''
+    'kitemmodels' => '',
+
+     ### Tier 2
+    'kcompletion' => '',
+    'kjobwidgets' => '',
+    'kauth' => '',
+    'kcrash' => '',
+    'kdoctools' => '',
+    'ki18n' => '',
+    'kwallet' => '',
+    'knotifications' => '',
+    'kservice' => '',
+
+    ### And all others
+    'attica' => '',
+    'kbookmarks' => '',
+    'kconfigwidgets' => '',
+    'kde4support' => '',
+    'kdesignerplugin' => '',
+    'kemoticons' => '',
+    'kglobalaccel' => '',
+    'kiconthemes' => '',
+    'kinit' => '',
+    'kio' => '',
+    'knewstuff' => '',
+    'knotifyconfig' => '',
+    'kparts' => '',
+    'kprintutils' => '',
+    'kpty' => '',
+    'kross' => '',
+    'ktexteditor' => '',
+    'ktextwidgets' => '',
+    'kunitconversion' => '',
+    'kxmlgui' => ''
 );
 
 my $upstream_url = "http://download.kde.org/unstable/frameworks/4.97.0/";
@@ -36,8 +71,8 @@ if ($? != 0) {
     die "Unable to call brew -cache: $!";
 }
 
-for my $package (keys %tier1) {
-    my $upstream = $tier1{$package};
+for my $package (keys %frameworks) {
+    my $upstream = $frameworks{$package};
     if ($upstream eq '') {
         $upstream = $package;
     }
@@ -69,7 +104,7 @@ for my $package (keys %tier1) {
     my $sha1 = $ctx->hexdigest;
     close(CACHED_FILE);
 
-    print("$cached_file: $sha1\n");
+    # print("$cached_file: $sha1\n");
 
     open(FORMULA, "<", $formula) or die $!;
 

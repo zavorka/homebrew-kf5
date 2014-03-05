@@ -1,9 +1,9 @@
 require "formula"
 
 class Kf5Kcrash < Formula
+  url "http://download.kde.org/unstable/frameworks/4.97.0/kcrash-4.97.0.tar.xz"
+  sha1 "dac7bcbfa6e4ffeaf633ffa43cc932418b90b154"
   homepage "http://www.kde.org/"
-  url "http://download.kde.org/unstable/frameworks/4.95.0/kcrash-4.95.0.tar.xz"
-  sha1 ""
 
   head 'git://anongit.kde.org/kcrash.git'
 

@@ -1,9 +1,9 @@
 require "formula"
 
 class Kf5Kdoctools < Formula
+  url "http://download.kde.org/unstable/frameworks/4.97.0/kdoctools-4.97.0.tar.xz"
+  sha1 "f13163daf56d13bf1d66bbde8259002e3d42bf38"
   homepage "http://www.kde.org/"
-  url "http://download.kde.org/unstable/frameworks/4.95.0/kdoctools-4.95.0.tar.xz"
-  sha1 ""
 
   head 'git://anongit.kde.org/kdoctools.git'
 

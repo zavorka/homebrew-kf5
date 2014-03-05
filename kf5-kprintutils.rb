@@ -1,6 +1,8 @@
 require "formula"
 
 class Kf5Kprintutils < Formula
+  url "http://download.kde.org/unstable/frameworks/4.97.0/kprintutils-4.97.0.tar.xz"
+  sha1 "ba89de45b836fcc644640e6f8e9dd3422dfbd6e8"
 
   head 'git://anongit.kde.org/kprintutils.git'
 

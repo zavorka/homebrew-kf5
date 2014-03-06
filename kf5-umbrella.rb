@@ -13,7 +13,7 @@ class Kf5Umbrella < Formula
 
   def install
     args = std_cmake_args
-    args << "-DCMAKE_PREFIX_PATH=#{Formula.factory('qt5').opt_prefix}"
+
 
     system "cmake", ".", *args
     system "make", "install"

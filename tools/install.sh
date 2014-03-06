@@ -20,7 +20,10 @@ tier1="
     kf5-kwindowsystem.rb
     kf5-sonnet.rb
     kf5-kitemmodels.rb
-    kf5-kdbusaddons.rb"
+    kf5-kdbusaddons.rb
+    kf5-kimageformats.rb
+    kf5-kplotting.rb
+    kf5-kidletime.rb"
 
 tier2="
     kf5-kcompletion.rb

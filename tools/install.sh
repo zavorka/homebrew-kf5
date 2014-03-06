@@ -4,6 +4,8 @@
 pre="kf5-extra-cmake-modules.rb
      kf5-phonon.rb "
 
+# kf5-threadweaver
+
 tier1="
     kf5-kjs.rb
     kf5-karchive.rb
@@ -32,6 +34,10 @@ tier2="
     kf5-knotifications.rb
     kf5-kiconthemes.rb"
 
+
+#    kf5-kprintutils.rb ### deleted
+#    kf5-ktexteditor.rb ### KF 5.1
+
 others="
     kf5-attica.rb
     kf5-kbookmarks.rb
@@ -45,10 +51,8 @@ others="
     kf5-knewstuff.rb
     kf5-knotifyconfig.rb
     kf5-kparts.rb
-    kf5-kprintutils.rb
     kf5-kpty.rb
     kf5-kross.rb
-    kf5-ktexteditor.rb
     kf5-ktextwidgets.rb
     kf5-kunitconversion.rb
     kf5-kxmlgui.rb"
